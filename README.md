@@ -9,6 +9,15 @@ repositories.
 
 ### Obtaining the Repositories
 
+usage: `get_repos.sh [input_repo_list] [output_report_file]`
+
+Default values:
+
+* `input_repo_list` = `list.csv`
+* `output_report_file` = `scores.csv`
+
+Detailed Explanation:
+
 First, run the `get_repos.sh` file.
 
 The default parameters of this program specifies that the repositories are
@@ -27,6 +36,8 @@ the following columns:
 
 Where the last one, message quality, is left open for you to write because it
 is qualitative.
+
+The CSV file name, if not supplied, is `scores.csv`.
 
 ### Manually going through the Repo Messages
 

@@ -9,10 +9,16 @@ if [ $# -eq 0 ]; then
     echo No source file name given. Looking for list.csv.
 fi
 
-if [ $# -eq 1 ]; then
+if [ $# -ge 1 ]; then
     sourcefilename=$1
-    echo Using ${sourcefilename}
 fi
+
+if [ $# -ge 2 ]; then
+    reportfilename=$2
+fi
+
+echo Using ${sourcefilename}
+echo Writing to ${reportfilename}
 
 for line in `cat ${sourcefilename}`; do
     IFS=, read -r studentid giturl <<< $line
