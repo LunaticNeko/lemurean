@@ -5,6 +5,14 @@ sourcefilename="list.csv"
 
 echo "id,commits,branches,merges,tags,message_q" >${reportfilename}
 
+if [ $# -eq 0 ]; then
+    echo No source file name given. Looking for list.csv.
+fi
+
+if [ $# -eq 1 ]; then
+    sourcefilename=$1
+    echo Using ${sourcefilename}
+fi
 
 for line in `cat ${sourcefilename}`; do
     IFS=, read -r studentid giturl <<< $line
