@@ -12,7 +12,8 @@ repositories.
 First, run the `get_repos.sh` file.
 
 The default parameters of this program specifies that the repositories are
-loaded from `list.csv` which must be formatted as follows:
+loaded from `list.csv` (can be overridden by an argument) which must be
+formatted as follows:
 
 `id,url`
 
@@ -35,6 +36,11 @@ already (I know it's weird behavior but please excuse my ba/sh skills).
 The commits of each repo are displayed one by one. For now you have to use
 a separate program (Excel or Vim or something) to edit the score CSV file as
 this program does not offer any functionality to help you with this.
+
+## Changelog
+
+* v0.0.2: Added argument support to change source file name
+* v0.0.1: Initial Test
 
 ## Author
 
