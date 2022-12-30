@@ -1,4 +1,4 @@
-#Lemurean: Multi-Repo Analyzer
+# Lemurean: Multi-Repo Analyzer
 
 ## Introduction
 
@@ -12,7 +12,7 @@ repositories.
 First, run the `get_repos.sh` file.
 
 The default parameters of this program specifies that the repositories are
-loaded from "list.csv" which must be formatted as follows:
+loaded from `list.csv` which must be formatted as follows:
 
 `id,url`
 
