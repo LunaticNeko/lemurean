@@ -48,8 +48,28 @@ The commits of each repo are displayed one by one. For now you have to use
 a separate program (Excel or Vim or something) to edit the score CSV file as
 this program does not offer any functionality to help you with this.
 
+## FAQ
+
+### Why?
+
+Because I want to quickly determine if a student's repo is worth grading.
+Most repos are fine but then you get some with extra effort like lots of
+branching and merging actions, or some that aren't worth grading like those
+with 1-2 commits over 3 weeks.
+
+### How is this different from `grapetool`?
+
+`grapetool` obtains only metadata information using GitHub mechanisms without
+cloning, which saves bandwidth. However, `lemurean` does not require a GitHub
+dev key, pulls the whole repos, and scans everything (I want to know).
+
+Cloning also serves as evidence of student homework. In short, `grapetool` was
+desinged for analytical purposes but `lemurean` is designed more specifically
+for education.
+
 ## Changelog
 
+* v0.0.3: Added argument support to change destination file name
 * v0.0.2: Added argument support to change source file name
 * v0.0.1: Initial Test
 
